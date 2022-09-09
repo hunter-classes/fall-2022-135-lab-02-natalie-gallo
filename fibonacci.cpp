@@ -4,8 +4,7 @@ Course: CSCI-135
 Instructor: Michael Zamansky
 Assignment: Lab 2D
 
-Here, briefly, at least in one or a few sentences
-describe what the program does.
+This program prints up to the 60th term in the fibonacci sequence.
 */
 
 #include <iostream>
@@ -27,4 +26,9 @@ int main()
   return 0;
 }
 
+/*
+As the program reaches the later terms, the value of a handful of these indexes becomes negative.
+
+It is because the size becomes too large. Int cannot handle a value past a certain number. Int has a maximum value of 2147483647. As a result, it loops around.
+*/
   
